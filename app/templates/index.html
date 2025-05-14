@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+    {% block conteudo %}
+    <div class="profile-card">
+        <h2 class="profile-title">Olá, {{dados.nome}}!</h2>
+        <section class="profile-info">
+            <h3>Dados</h3>
+            <p>Profissão: {{dados.profissao}}</p>
+            <p>Idade: {{dados.idade}} anos</p>
+            <p>Curso: {{dados.curso}}</p>
+        </section>
+    </div>
+    {% endblock %}
